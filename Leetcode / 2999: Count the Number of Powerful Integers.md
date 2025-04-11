@@ -22,17 +22,17 @@ Return the **total number of powerful integers** within the range `[start..finis
 
 ### Example 1:
 
-Input: start = 1, finish = 6000, limit = 4, s = "124" Output: 5
+Input: start = 1, finish = 6000, limit = 4, s = "124" Output: 5<br>
 
-Powerful integers = [124, 1124, 2124, 3124, 4124]
+Powerful integers = [124, 1124, 2124, 3124, 4124]<br>
 
 ### Example 2:
-Input: start = 15, finish = 215, limit = 6, s = "10" Output: 2
-Powerful integers = [110, 210]
+Input: start = 15, finish = 215, limit = 6, s = "10" Output: 2<br>
+Powerful integers = [110, 210]<br>
 ### Example 3:
-Input: start = 1000, finish = 2000, limit = 4, s = "3000" Output: 0
+Input: start = 1000, finish = 2000, limit = 4, s = "3000" Output: 0<br>
 
-No valid powerful integers in this range.
+No valid powerful integers in this range.<br>
 
 ---
 
@@ -50,8 +50,8 @@ No valid powerful integers in this range.
 
 The approach uses **digit dynamic programming (digit DP)**:
 
-- Count how many numbers up to `finish` end with `s` and are bounded by the `limit`.
-- Subtract how many such numbers are up to `start - 1`.
+- Count how many numbers up to `finish` end with `s` and are bounded by the `limit`.<br>
+- Subtract how many such numbers are up to `start - 1`.<br>
 
 ---
 
@@ -84,10 +84,10 @@ class Solution:
 ```
 <h2>Time Complexity</h2>
 
-O(D * limit), where D = number of digits in finish
-Memoization helps avoid redundant computations
+O(D * limit), where D = number of digits in finish<br>
+Memoization helps avoid redundant computations<br>
 <h2>Space Complexity</h2>
 
-O(D * 2) for recursion depth and caching
+O(D * 2) for recursion depth and caching<br>
 
 
