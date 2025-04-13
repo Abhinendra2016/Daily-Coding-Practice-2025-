@@ -16,9 +16,9 @@ An integer is called **good** if its digits can be **rearranged** to form a **k-
 ### Example 1:
 Input: n = 3, k = 5
 Output: 27
-**Explanation:**  
-Some of the good integers are:  
-- 551 → can be rearranged to form 515 (a k-palindromic integer)  
+**Explanation:**
+Some of the good integers are:
+- 551 → can be rearranged to form 515 (a k-palindromic integer)
 - 525 → already a k-palindromic integer
 
 ---
